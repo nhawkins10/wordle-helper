@@ -1,0 +1,14 @@
+.mat-list {
+  height: calc(100% - 50px);
+  overflow: auto;
+}
+
+.mat-list-item.word {
+  display: inline-block;
+  width: 100px;
+}
+
+.more-results {
+  text-align: center;
+  color: grey;
+}

@@ -1,0 +1,31 @@
+.cell {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(242, 242, 242);
+}
+
+.cell-container {
+  width: 100%;
+  text-align: center;
+}
+
+.cell-input{
+  width: 90%;
+  text-align: center;
+}
+
+.cell-select {
+  width: 90%;
+}
+
+.grey {
+  background-color: rgb(128, 128, 128);
+}
+
+.yellow {
+  background-color: rgb(246, 231, 132);
+}
+
+.green {
+  background-color: rgb(115, 180, 115);
+}

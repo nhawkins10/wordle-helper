@@ -1,0 +1,16 @@
+<mat-grid-list cols="5" gutterSize="15px" rowHeight="100px">
+  <mat-grid-tile class="cell" [ngClass]="cell.color" *ngFor="let cell of letterGrid">
+    <div class="cell-container">
+      <mat-form-field class="cell-input" appearance="fill" color="primary">
+        <input matInput [(ngModel)]="cell.letter" (change)="letterGridChange()" />
+      </mat-form-field>
+      <mat-form-field class="cell-select" appearance="fill" color="primary">
+        <mat-select [(value)]="cell.color" appearance="fill" color="primary">
+          <mat-option value="grey">Grey</mat-option>
+          <mat-option value="yellow">Yellow</mat-option>
+          <mat-option value="green">Green</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

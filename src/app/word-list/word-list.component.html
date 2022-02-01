@@ -1,0 +1,13 @@
+<button mat-raised-button color="primary" (click)="refresh()">Refresh</button>
+<mat-list *ngIf="matchingWords.length > 0">
+  <mat-list-item class="word" *ngFor="let word of matchingWords">{{ word }}</mat-list-item>
+</mat-list>
+<div class="more-results" *ngIf="matchingWords.length > 0">
+  {{ matchingWords.length }} {{ matchingWords.length == 1 ? 'result.' : 'results.'}}
+</div>
+<mat-list *ngIf="matchingWords.length === 0">
+  <mat-list-item class="word" *ngFor="let word of allWords.slice(0, 100)">{{ word }}</mat-list-item>
+</mat-list>
+<div class="more-results" *ngIf="matchingWords.length === 0">
+  {{ allWords.length - 100 }} more results.
+</div>

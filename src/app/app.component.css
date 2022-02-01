@@ -1,0 +1,17 @@
+@media (min-width: 501px) {
+  mat-card {
+    width: calc(50% - 60px);
+    height: 90%;
+    margin: 10px;
+    overflow: auto;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 500px) {
+  mat-card {
+    width: calc(100% - 20px);
+    margin: 5px;
+    padding: 5px;
+  }
+}
