@@ -102,7 +102,11 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://nhawkins10.github.io/wordle-helper/",
+            "name": "Wordle Helper"
+          }
         }
       }
     }

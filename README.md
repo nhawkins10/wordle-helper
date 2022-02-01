@@ -10,9 +10,7 @@ Site can be accessed [here](https://nhawkins10.github.io/wordle-helper/).
 ### Deploying to gh-pages
 Documentation can be found [here](https://www.npmjs.com/package/angular-cli-ghpages).
 
-First: ` ng build --prod --base-href "https://nhawkins10.github.io/scheduling-coordinator/" `
-
-Second: `ngh`
+` ng deploy `
 
 ## Code scaffolding
 
