@@ -33,23 +33,23 @@ export class WordListComponent implements OnInit {
 
       //check for letters that are not in the word
       this.negativeLetters.forEach((letter) => {
-        if (word.indexOf(letter) > -1) {
+        if (word.indexOf(letter.toLowerCase()) > -1) {
           negativeLettersClear = false;
         }
       });
 
       //check for letters that are in the word in a different place
       this.partialMatchLetters.forEach((letterObj) => {
-        if (word.indexOf(letterObj.letter) === -1 ||
-          (word.indexOf(letterObj.letter) > -1 && word[letterObj.position] === letterObj.letter)) {
+        if (word.indexOf(letterObj.letter.toLowerCase()) === -1 ||
+          (word.indexOf(letterObj.letter.toLowerCase()) > -1 && word[letterObj.position] === letterObj.letter.toLowerCase())) {
           partialLettersClear = false;
         }
       });
 
       //check for letters that are in the word in that place
       this.matchLetters.forEach((letterObj) => {
-        if (word.indexOf(letterObj.letter) === -1 ||
-          (word.indexOf(letterObj.letter) > -1 && word[letterObj.position] !== letterObj.letter)) {
+        if (word.indexOf(letterObj.letter.toLowerCase()) === -1 ||
+          (word.indexOf(letterObj.letter.toLowerCase()) > -1 && word[letterObj.position] !== letterObj.letter.toLowerCase())) {
             matchLettersClear = false;
         }
       });
